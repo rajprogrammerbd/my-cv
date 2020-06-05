@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PersonalInfo from "./components/personal-info";
 import Skills from "./components/skills";
+import Software from "./components/software";
 import "./App.scss";
 
 class App extends Component {
@@ -35,6 +36,23 @@ class App extends Component {
       { id: 8, message: "Patience" },
       { id: 9, message: "Database Architecture" },
     ],
+    software_level: [
+      {
+        id: 1,
+        name: "Photoshop",
+        value: { total: [1, 2, 3, 4, 5], val: 4, val_name: "Very Good" },
+      },
+      {
+        id: 2,
+        name: "Microsoft (Word, Powerpoint)",
+        value: { total: [1, 2, 3, 4, 5], val: 3, val_name: "Good" },
+      },
+      {
+        id: 3,
+        name: "Git",
+        value: { total: [1, 2, 3, 4, 5], val: 3, val_name: "Good" },
+      },
+    ],
   };
   render() {
     return (
@@ -43,6 +61,7 @@ class App extends Component {
           <div className="container-left">
             <PersonalInfo personInfo={this.state.personalInfo} />
             <Skills skills={this.state.skills} />
+            <Software software={this.state.software_level} />
           </div>
           <div className="container-right"></div>
         </div>
