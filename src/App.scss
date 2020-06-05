@@ -18,6 +18,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: $normal-font-size;
   }
 }
 
@@ -36,6 +37,68 @@ body .container {
 
 body .container .container-left {
   @include body-container(30%);
+  div.personal-info {
+    width: 100%;
+    height: auto;
+    color: $default-text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+
+      ul {
+        list-style-type: disc;
+        padding-left: 25px;
+
+        li {
+          font-family: inherit;
+          color: $headding-text-color;
+          font-weight: bold;
+          font-size: $headding-text-fontSize;
+        }
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .personal-links {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2px;
+
+        &:first-child {
+          margin-top: 0px;
+        }
+
+        .personal-links-images {
+          margin: {
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 10px;
+          }
+        }
+
+        .personal-link-text {
+          font-family: inherit;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
 }
 
 body .container .container-right {
