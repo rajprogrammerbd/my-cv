@@ -1,0 +1,14 @@
+@import "./variables";
+
+// Body container left/right
+
+@mixin body-container($width) {
+  width: $width;
+  height: $body-height;
+  max-height: $body-height;
+  padding: {
+    top: 25px;
+    bottom: 15px;
+  }
+  text-align: left;
+}
