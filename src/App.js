@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PersonalInfo from "./components/personal-info";
+import Skills from "./components/skills";
 import "./App.scss";
 
 class App extends Component {
@@ -22,34 +24,27 @@ class App extends Component {
         imageAddress: "./icons/github.png",
       },
     ],
+    skills: [
+      { id: 1, message: "Team Management" },
+      { id: 2, message: "Coding Languages ( Javascript, Python )" },
+      { id: 3, message: "Problem Solving" },
+      { id: 4, message: "Good Leadership Skills" },
+      { id: 5, message: "Communication Skills" },
+      { id: 6, message: "Innvotive Thinking" },
+      { id: 7, message: "Analytical Skills" },
+      { id: 8, message: "Patience" },
+      { id: 9, message: "Database Architecture" },
+    ],
   };
   render() {
     return (
       <React.Fragment>
         <div className="container">
           <div className="container-left">
-            <div className="personal-info">
-              <div className="top">
-                <ul>
-                  <li className="personal-headding-text">Personal Info</li>
-                </ul>
-              </div>
-              <div className="bottom">
-                {this.state.personalInfo.map((obj) => (
-                  <div key={obj.id} className="personal-links">
-                    <img
-                      src={obj.imageAddress}
-                      className="personal-links-images"
-                    />
-                    <p className="personal-link-text">{obj.value}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <PersonalInfo personInfo={this.state.personalInfo} />
+            <Skills skills={this.state.skills} />
           </div>
-          <div className="container-right">
-            <p>Hello World!</p>
-          </div>
+          <div className="container-right"></div>
         </div>
       </React.Fragment>
     );

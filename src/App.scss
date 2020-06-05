@@ -19,7 +19,24 @@ html {
     flex-direction: column;
     align-items: center;
     font-size: $normal-font-size;
+    background-color: $body-background-color;
   }
+}
+
+%containers-left-lists {
+  font-family: inherit;
+  color: $headding-text-color;
+  font-weight: bold;
+  font-size: $headding-text-fontSize;
+}
+
+%container-left-cover {
+  width: 100%;
+  height: auto;
+  color: $default-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body .container {
@@ -38,27 +55,17 @@ body .container {
 body .container .container-left {
   @include body-container(30%);
   div.personal-info {
-    width: 100%;
-    height: auto;
-    color: $default-text-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %container-left-cover;
 
     .top {
-      width: 100%;
-      height: auto;
-      margin-bottom: 15px;
+      @include personal-skill-top;
 
       ul {
         list-style-type: disc;
-        padding-left: 25px;
+        padding-left: 23px;
 
         li {
-          font-family: inherit;
-          color: $headding-text-color;
-          font-weight: bold;
-          font-size: $headding-text-fontSize;
+          @extend %containers-left-lists;
         }
       }
     }
@@ -96,6 +103,43 @@ body .container .container-left {
           font-family: inherit;
           letter-spacing: 0.2px;
         }
+      }
+    }
+  }
+
+  .skills {
+    @extend %container-left-cover;
+    margin: {
+      top: 20px;
+    }
+
+    .skill-top {
+      @include personal-skill-top;
+
+      ul {
+        list-style-type: disc;
+        padding-left: 23px;
+
+        li {
+          font-family: inherit;
+          color: #0b2f53;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .skill-bottom {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .skills-names {
+        font-family: inherit;
+        letter-spacing: 0.2px;
+        margin-top: 6px;
       }
     }
   }
