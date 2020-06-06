@@ -1,6 +1,6 @@
 import React from "react";
 
-const Software = ({ software }) => {
+const Software = () => {
   return (
     <React.Fragment>
       <div className="software">
@@ -16,11 +16,11 @@ const Software = ({ software }) => {
             </div>
             <div className="right">
               <div className="right-top">
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/unfiled-icon.png" />
-                <img src="./icons/unfiled-icon.png" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/unfiled-icon.png" alt="Unfiled icon" />
+                <img src="./icons/unfiled-icon.png" alt="Unfiled icon" />
               </div>
               <div className="right-bottom">
                 <p>Good</p>
@@ -34,11 +34,11 @@ const Software = ({ software }) => {
             </div>
             <div className="right">
               <div className="right-top">
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/unfiled-icon.png" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/unfiled-icon.png" alt="Unfiled icon" />
               </div>
               <div className="right-bottom">
                 <p>Very Good</p>
@@ -52,11 +52,11 @@ const Software = ({ software }) => {
             </div>
             <div className="right">
               <div className="right-top">
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/unfiled-icon.png" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/unfiled-icon.png" alt="Unfiled icon" />
               </div>
               <div className="right-bottom">
                 <p>Very Good</p>
@@ -69,11 +69,11 @@ const Software = ({ software }) => {
             </div>
             <div className="right">
               <div className="right-top">
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/filled-icon.png" />
-                <img src="./icons/unfiled-icon.png" />
-                <img src="./icons/unfiled-icon.png" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/filled-icon.png" alt="filed icon" />
+                <img src="./icons/unfiled-icon.png" alt="unfiled icon" />
+                <img src="./icons/unfiled-icon.png" alt="unfiled icon" />
               </div>
               <div className="right-bottom">
                 <p>Good</p>

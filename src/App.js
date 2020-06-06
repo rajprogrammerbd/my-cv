@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PersonalInfo from "./components/personal-info";
 import Skills from "./components/skills";
 import Software from "./components/software";
+import Languages from "./components/languages";
 import "./App.scss";
 
 class App extends Component {
@@ -62,6 +63,7 @@ class App extends Component {
             <PersonalInfo personInfo={this.state.personalInfo} />
             <Skills skills={this.state.skills} />
             <Software software={this.state.software_level} />
+            <Languages />
           </div>
           <div className="container-right"></div>
         </div>

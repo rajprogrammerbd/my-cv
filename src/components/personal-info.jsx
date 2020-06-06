@@ -12,7 +12,11 @@ const PersonalInfo = ({ personInfo }) => {
         <div className="bottom">
           {personInfo.map((obj) => (
             <div key={obj.id} className="personal-links">
-              <img src={obj.imageAddress} className="personal-links-images" />
+              <img
+                src={obj.imageAddress}
+                className="personal-links-images"
+                alt="personal links"
+              />
               <p className="personal-link-text">{obj.value}</p>
             </div>
           ))}

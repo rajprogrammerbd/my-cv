@@ -18,3 +18,20 @@
   height: auto;
   margin-bottom: 10px;
 }
+
+@mixin software-bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin software-language-items {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
