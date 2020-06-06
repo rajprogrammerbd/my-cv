@@ -203,4 +203,70 @@ body .container .container-left {
 
 body .container .container-right {
   @include body-container(65%);
+
+  .header {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header-top {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      .header-top-left img.header-image {
+        width: 96px;
+        border-radius: 50px;
+        max-height: 98px;
+      }
+
+      .header-top-bottom {
+        margin: {
+          left: 15px;
+        }
+        color: $headding-text-color;
+
+        h2.header-name {
+          color: inherit;
+          text-transform: capitalize;
+          font-weight: normal;
+          font-size: 32px;
+          letter-spacing: 1px;
+        }
+
+        p {
+          color: inherit;
+          font-weight: 600;
+          font-size: 12.6px;
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          line-height: 22px;
+          margin-left: 3px;
+        }
+      }
+    }
+
+    .header-bottom {
+      width: 100%;
+      max-width: 100%;
+      margin: {
+        top: 12px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+      }
+
+      p.career-object {
+        font-family: inherit;
+        line-height: 20px;
+      }
+    }
+  }
 }

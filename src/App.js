@@ -3,10 +3,12 @@ import PersonalInfo from "./components/personal-info";
 import Skills from "./components/skills";
 import Software from "./components/software";
 import Languages from "./components/languages";
+import Header from "./components/header";
 import "./App.scss";
 
 class App extends Component {
   state = {
+    imageShow: true,
     personalInfo: [
       {
         id: 1,
@@ -65,7 +67,9 @@ class App extends Component {
             <Software software={this.state.software_level} />
             <Languages />
           </div>
-          <div className="container-right"></div>
+          <div className="container-right">
+            <Header image={this.state.imageShow} />
+          </div>
         </div>
       </React.Fragment>
     );
