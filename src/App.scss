@@ -221,16 +221,19 @@ body .container .container-right {
       align-items: center;
       justify-content: flex-start;
 
-      .header-top-left img.header-image {
-        width: 96px;
-        border-radius: 50px;
-        max-height: 98px;
+      .header-top-left {
+        margin: {
+          right: 15px;
+        }
+
+        img.header-image {
+          width: 96px;
+          border-radius: 50px;
+          max-height: 98px;
+        }
       }
 
       .header-top-bottom {
-        margin: {
-          left: 15px;
-        }
         color: $headding-text-color;
 
         h2.header-name {
@@ -266,6 +269,94 @@ body .container .container-right {
       p.career-object {
         font-family: inherit;
         line-height: 20px;
+      }
+    }
+  }
+
+  .expriences {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    .expriences-top {
+      @include personal-skill-top;
+
+      ul {
+        list-style-type: disc;
+        padding-left: 23px;
+
+        li {
+          @extend %containers-left-lists;
+        }
+      }
+    }
+
+    .expriences-bottom {
+      width: 100%;
+      height: auto;
+
+      .exprience-items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .items-left {
+          width: 16%;
+
+          .items-dates {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: 17px;
+          }
+        }
+        .items-right {
+          width: 82%;
+          overflow: hidden;
+
+          .items-right-top {
+            width: 100%;
+            height: auto;
+            margin: {
+              bottom: 3px;
+            }
+
+            .right-top-title {
+              font-family: inherit;
+              font-weight: 700;
+              font-size: 15px;
+              text-transform: capitalize;
+              letter-spacing: 0.1px;
+              line-height: 21px;
+            }
+
+            p.address {
+              font-family: inherit;
+              line-height: 15px;
+            }
+          }
+
+          .items-right-bottom {
+            width: 100%;
+            overflow: hidden;
+
+            ul {
+              list-style-type: disc;
+              margin-left: 15px;
+
+              li {
+                font-family: inherit;
+                font-size: inherit;
+                line-height: 18px;
+              }
+            }
+          }
+        }
       }
     }
   }

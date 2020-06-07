@@ -4,6 +4,7 @@ import Skills from "./components/skills";
 import Software from "./components/software";
 import Languages from "./components/languages";
 import Header from "./components/header";
+import Expriences from "./components/expriences";
 import "./App.scss";
 
 class App extends Component {
@@ -69,6 +70,7 @@ class App extends Component {
           </div>
           <div className="container-right">
             <Header image={this.state.imageShow} />
+            <Expriences />
           </div>
         </div>
       </React.Fragment>
