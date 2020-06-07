@@ -6,6 +6,7 @@ import Languages from "./components/languages";
 import Header from "./components/header";
 import Expriences from "./components/expriences";
 import Technical from './components/technicalProficiency';
+import Education from './components/education';
 import "./App.scss";
 
 class App extends Component {
@@ -69,6 +70,7 @@ class App extends Component {
             <Header image={this.state.imageShow} />
             <Expriences />
             <Technical data={this.state.technicalProficiency} />
+            <Education />
           </div>
         </div>
       </React.Fragment>
