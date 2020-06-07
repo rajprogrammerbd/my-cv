@@ -199,6 +199,8 @@ body .container .container-left {
       }
     }
   }
+
+  // Write Interest CSS Here
 }
 
 body .container .container-right {
@@ -457,6 +459,97 @@ body .container .container-right {
             }
           }
         }
+      }
+    }
+  }
+
+  .certificate {
+    @include right-div-structure;
+    margin-top: 20px;
+
+    .certificate-top {
+      @include personal-skill-top;
+
+      ul {
+        list-style-type: disc;
+        padding-left: 23px;
+
+        li {
+          @extend %containers-left-lists;
+        }
+      }
+    }
+
+    .certificate-bottom {
+      width: 100%;
+      overflow: hidden;
+      height: auto;
+
+      .certificate-items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .certificate-left {
+          width: 16%;
+          height: auto;
+
+          .certificate-date {
+            @include p-items-date;
+          }
+        }
+
+        .certificate-right {
+          width: 84%;
+          height: auto;
+
+          .certificate-name {
+            color: inherit;
+            font-size: inherit;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.interest {
+  @extend %container-left-cover;
+  margin: {
+    top: 20px;
+  }
+
+  .interest-top {
+    @include personal-skill-top;
+
+    ul {
+      list-style-type: disc;
+      padding-left: 23px;
+
+      li {
+        @extend %containers-left-lists;
+      }
+    }
+  }
+
+  .interest-bottom {
+    width: 100%;
+    height: auto;
+    margin: {
+      left: 39px;
+    }
+
+    ul {
+      list-style-type: inherit;
+
+      li {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: 20px;
       }
     }
   }

@@ -7,11 +7,18 @@ import Header from "./components/header";
 import Expriences from "./components/expriences";
 import Technical from './components/technicalProficiency';
 import Education from './components/education';
+import Cirtificate from './components/cirtificate';
+import Interest from './components/interest';
 import "./App.scss";
+
 
 class App extends Component {
   state = {
     imageShow: true,
+    interest: [
+      { id: 1, name: "Software Developer" },
+      { id: 2, name: "Artificial Intelligence" }
+    ],
     personalInfo: [
       {
         id: 1,
@@ -65,12 +72,14 @@ class App extends Component {
             <Skills skills={this.state.skills} />
             <Software software={this.state.software_level} />
             <Languages />
+            <Interest data={this.state.interest} />
           </div>
           <div className="container-right">
             <Header image={this.state.imageShow} />
             <Expriences />
             <Technical data={this.state.technicalProficiency} />
             <Education />
+            <Cirtificate />
           </div>
         </div>
       </React.Fragment>

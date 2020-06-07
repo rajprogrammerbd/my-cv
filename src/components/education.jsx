@@ -32,32 +32,6 @@ const Education = () => {
               </div>
             </div>
           </div>
-
-          <div className="education-items">
-            <div className="education-items-left">
-              <p className="edu-items-date">2018 Jan - 2018 June</p>
-            </div>
-            <div className="education-items-right">
-              <div className="items-right-top">
-                <h2 className="right-top-title">
-                  Professional Diploma in Internet Programming &amp; Web
-                  Development, Khulna University of Engineering &amp; Technology
-                </h2>
-              </div>
-              <div className="items-right-bottom">
-                <ul>
-                  <li>
-                    Professional Diploma in Internet Programming &amp; Web
-                    Development.
-                  </li>
-                  <li>
-                    Completed industrial attachment in Water Supply &amp;
-                    Sewerage Authority(WASA) Khulna.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </React.Fragment>
