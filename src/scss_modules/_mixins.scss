@@ -35,3 +35,12 @@
   justify-content: space-between;
   margin-bottom: 16px;
 }
+
+@mixin right-div-structure {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
