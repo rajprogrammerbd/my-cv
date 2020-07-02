@@ -14,7 +14,7 @@ import "./App.scss";
 
 class App extends Component {
   state = {
-    imageShow: true,
+    imageShow: false,
     interest: [
       { id: 1, name: "Software Developer" },
       { id: 2, name: "Artificial Intelligence" }
@@ -40,7 +40,7 @@ class App extends Component {
     ],
     skills: [
       { id: 1, message: "Team Management" },
-      { id: 2, message: "Coding Languages ( Javascript, Python )" },
+      { id: 2, message: "Coding Languages ( Javascript )" },
       { id: 3, message: "Problem Solving" },
       { id: 4, message: "Good Leadership Skills" },
       { id: 5, message: "Communication Skills" },
@@ -56,11 +56,13 @@ class App extends Component {
       { id: 4, message: "Experience of working on CSS Preprocessors like SCSS & SASS along with node js." },
       { id: 5, message: "Expert in developing websites and professional web applications using Javascript, react js, HTML, CSS3, Jquery." },
       { id: 6, message: "Strong knowledge in cross-browser compatibility issues and building back-end service with node js." },
-      { id: 7, message: "Experience in working with RESTful web services and implementing RESTful APIs with express js." },
-      { id: 8, message: "Writing font-end code like HTML, CSS for assigned user requirements using various other Javascript frameworks." },
-      { id: 9, message: "Experience in working with git and GitHub." },
-      { id: 10, message: "Experience in writing PHP code and database design and writing complex queries using MySql and MongoDB." },
-      { id: 11, message: "Experience in webpage development with WordPress." }
+      { id: 7, message: "Excellent experience in working with Webpack, JWT and other plugins." },
+      { id: 8, message: "Experience in working with RESTful web services and implementing RESTful APIs with express js." },
+      { id: 9, message: "Writing font-end code like HTML, CSS for assigned user requirements using various other Javascript frameworks." },
+      { id: 10, message: "Experience in working with git and GitHub." },
+      { id: 11, message: "Experience in writing PHP code and database design and writing complex queries using MySql and MongoDB." },
+      { id: 12, message: "Experience in website development with WordPress." },
+      { id: 13, message: "Expert in visualizing data with D3.js and for animation use several libraries." }
     ]
   };
   render() {
