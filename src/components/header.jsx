@@ -18,13 +18,13 @@ const Header = ({ image }) => {
             <h2 className="header-name">
               raj <span style={{ fontWeight: 900 }}>dutta</span>
             </h2>
-            <p>font end developer</p>
+            <p>front end developer</p>
           </div>
         </div>
         <div className="header-bottom">
           <p className="career-object">
             Creative and self-starting Front-End Developer with{" "}
-            <span style={{ fontWeight: "bold" }}>2 years</span> of experience
+            <span style={{ fontWeight: "bold" }}>3 years</span> of experience
             building stable{" "}
             <span style={{ fontWeight: "bold" }}>
               single page application (SPA)
